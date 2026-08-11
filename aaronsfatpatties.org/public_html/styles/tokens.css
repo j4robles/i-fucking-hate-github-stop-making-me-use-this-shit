@@ -1,0 +1,79 @@
+:root {
+  /* color */
+  --ink: #fff;
+  --paper: #111;
+  --banner-ink: #fff;
+  --banner-ink-outline: #000;
+  --banner: #000d85;
+  --linky: #dd0000;
+  --error: #ff0000;
+  --error-bg: #000000;
+
+  /* space */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  /* border */
+  --border-style: solid;
+  --border-width: 2px;
+  --rule-width: 4px;
+  --underline-width: 2px;
+  --border: var(--border-width) var(--border-style) var(--ink);
+  --banner-border: var(--border-width) var(--border-style) var(--banner-ink);
+  --rule: var(--rule-width) var(--border-style) var(--accent);
+
+  /* type */
+  --text-s: 0.875rem;
+  --text-m: 1rem;
+  --text-l: 1.5rem;
+  --text-xl: 2.25rem;
+  --text-xxl: 5rem;
+  --text-xxxl: 9rem;
+
+  /* line length */
+  --measure: 62ch;
+  --measure-l: 93ch;
+  --measure-xl: 124ch;
+
+  /* screen width */
+  --width-m: 675px;
+  --width-s: 420px;
+
+  /* other text decorations */
+  --outline-width: 0.04em;
+  --outline-color: var(--banner-ink-outline);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: #111;
+    --paper: #fff;
+    --banner: #000d85;
+    --banner-ink: #fff;
+    --linky: #dd0000;
+    --error: #ff0000;
+    --error-bg: #000000;
+  }
+}
+
+:root[data-theme="light"] {
+  --ink: #111;
+  --paper: #fff;
+  --banner: #000d85;
+  --banner-ink: #fff;
+  --linky: #dd0000;
+  --error: #ff0000;
+  --error-bg: #000000;
+}
+:root[data-theme="dark"] {
+  --ink: #fff;
+  --paper: #111;
+  --banner-ink: #fff;
+  --banner-ink-outline: #000;
+  --banner: #000d85;
+  --linky: #dd0000;
+  --error: #ff0000;
+  --error-bg: #000000;
+}

@@ -1,0 +1,11 @@
+main {
+    justify-items: center;
+
+    > article {
+        p {
+            justify-self: center;
+            align-self: center;
+            max-width: var(--measure-xl);
+        }
+    }
+}

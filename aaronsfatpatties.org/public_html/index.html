@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Aaron's Fat Patties</title>
+		<meta name="description" content="Visit the Hingalabar" />
+		<link rel="icon" type="image/png" href="assets/images/johnny_test_vvon.png" />
+		<link rel="stylesheet" href="styles/tokens.css" />
+		<link rel="stylesheet" href="styles/global.css" />
+		<link rel="stylesheet" href="styles/site.css" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<script src="scripts/components.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Aaron's Fat Patties (CSE 135)</h1>
+			<nav aria-label="Navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="joshrobles.html">Josh Robles</a></li>
+					<li><a href="hw1/index.html">HW1</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<header id="hero">
+					<video autoplay muted loop playsinline controls>
+						<source src="assets/videos/AI.mp4" type="video/mp4">
+						<source src="assets/videos/AI.webm" type="video/webm">
+					</video>
+					<h2 class="outlined-banner">Welcome</h2>
+				</header>
+			</article>
+
+			<quran-verse> <!-- Grab an edition from here: https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions.json ("name" field) and set it as an edition= attribute to get verses in different translations or something -->
+				<noscript>
+					<h2>Fetch a Quran Verse For Yourself, Inshallah</h2>
+					<a href="https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/ara-jalaladdinalmah.json"><span lang="ar">اللّٰهُ أَكْبَر</span></a> <!--VSCode had a stroke trying to parse the sacred language of Allah -->
+					<small>Enable JS to have verses delivered to you!</small>
+				</noscript>
+			</quran-verse>
+
+			<template id="quran-verse-template">
+				<h2>Fetch a Random Quran Verse, Inshallah</h2>
+				<p id="qv-idle">Enrich your day, brother.</p>
+				<label for="qv-load-bar" class="qv-loading">Fetching a verse...</label>
+				<progress id="qv-load-bar" class="qv-loading"></progress>
+				<p lang="ar" dir="rtl" id="qv-verse" class="qv-success"></p>
+				<cite class="qv-success"></cite>
+				<p id="qv-error" class="error-txt" role="alert"></p>
+				<button type="button"></button>
+			</template>
+		</main>
+		<footer>
+			<small>
+				Built with hate by Joshua Robles — <time datetime=2026>2026</time>
+			</small>
+		</footer>
+	</body>
+</html>
